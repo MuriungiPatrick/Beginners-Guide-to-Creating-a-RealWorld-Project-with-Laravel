@@ -1,5 +1,6 @@
 @extends('layouts.master')
 @section('pagetitle', 'Category Page')
+@section('description', 'Hello from the Category Page')
 
 @section('content')
 <!-- Site header -->
