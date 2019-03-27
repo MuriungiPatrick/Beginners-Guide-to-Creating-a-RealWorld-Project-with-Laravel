@@ -19,3 +19,8 @@ Route::get('/', function () {
 Route::get('/jobs/show', function () {
     return view('jobs.show');
 });
+
+// DEFINE THE CATEGORY PAGE
+Route::get('/jobs/category', function () {
+    return view('jobs.category');
+});
