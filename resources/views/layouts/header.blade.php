@@ -7,7 +7,7 @@
     <meta name="description" content="Post a job position or create your online !">
     <meta name="keywords" content="">
 
-    <title>HomePage - Jobs.io</title>
+    <title>@yield('pagetitle') - Jobs.App</title>
     <!-- Styles -->
     <link href="{{ asset('assets/css/main.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/dashboard.css') }}" rel="stylesheet">

@@ -1,4 +1,5 @@
 @extends('layouts.master')
+@section('pagetitle', 'Jobs Details Page')
 @section('content')
 
     <!-- END Navigation bar -->
