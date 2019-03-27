@@ -10,7 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+// DEFINE THE HOMEPAGE
 Route::get('/', function () {
     return view('jobs.index');
+});
+
+// DEFINE THE JOBS DETAILS
+Route::get('/jobs/show', function () {
+    return view('jobs.show');
 });

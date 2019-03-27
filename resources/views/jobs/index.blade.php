@@ -33,7 +33,7 @@
                   <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
                   <div class="hgroup">
                     <h4>
-            <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
+            <a href="{{ url('jobs/show')}}">Qui harum culpa accusantium quisquam quis quo.</a>
                     </h4>
                      <div class="spacer-front"></div>
                   </div>

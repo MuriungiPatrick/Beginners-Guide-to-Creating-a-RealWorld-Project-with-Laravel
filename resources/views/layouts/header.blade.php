@@ -9,12 +9,12 @@
 
     <title>HomePage - Jobs.io</title>
     <!-- Styles -->
-    <link href="assets/css/main.min.css" rel="stylesheet">
-    <link href="assets/css/dashboard.css" rel="stylesheet">
-    <link href="assets/css/custom.css" rel="stylesheet">
-    <link href="assets/css/dashboard.min.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-grid.css" rel="stylesheet">
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="{{ asset('assets/css/main.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/dashboard.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/custom.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/dashboard.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/bootstrap-grid.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/style.css') }}" rel="stylesheet">
     <!-- Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Oswald:100,300,400,500,600,800%7COpen+Sans:300,400,500,600,700,800%7CMontserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Favicons -->

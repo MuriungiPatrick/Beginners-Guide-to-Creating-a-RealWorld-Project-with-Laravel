@@ -52,11 +52,11 @@ experience to be truly fulfilling. Laravel attempts to take the pain out of deve
     <a id="scroll-up" href="#"><i class="ti-angle-up"></i></a>
     <!-- END Back to top button -->
     <!-- Scripts -->
-    <script src="assets/js/simplebar.min.js"></script>
-    <script src="assets/js/main.min.js"></script>
-    <script src="assets/js/custom.js"></script>
-    <script src="assets/js/snackbar.js"></script>
-    <script src="assets/js/mmenu.min.js"></script>
+    <script src="{{ asset('assets/js/simplebar.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.min.js') }}"></script>
+    <script src="{{ asset('assets/js/custom.js') }}"></script>
+    <script src="{{ asset('assets/js/snackbar.js') }}"></script>
+    <script src="{{ asset('assets/js/mmenu.min.js') }}"></script>
 
   </body>
 </html>
