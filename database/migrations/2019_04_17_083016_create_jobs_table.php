@@ -13,15 +13,18 @@ class CreateJobsTable extends Migration
      */
     public function up()
     {
+        Schema::disableforeignKeyConstraints();
         Schema::create('jobs', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->integer('freelance_id');
+            $table->unsignedBigInteger('freelance_id');
+            $table->foreign('freelance_id')->references('id')->on('users')->onDelete('restrict');
             $table->string('job_title');
             $table->string('job_types');
             $table->string('slug')->unique();
             $table->text('hourly_rate')->nullable();
             $table->longText('job_description')->nullable();
-            $table->integer('category_id');
+            $table->unsignedBigInteger('category_id')->index()->nullable();
+            $table->foreign('category_id')->references('id')->on('categories')->onDelete('restrict');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
         });
