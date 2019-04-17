@@ -33,7 +33,7 @@
               <div class="col-xs-12">
               <div class="jobs-block">
                 <header>
-                  <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
+                  <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/Team-5-specs.png') }}" alt=""></a>
                   <div class="hgroup">
                     <h4>
             <a href="{{ url('jobs/show')}}">Qui harum culpa accusantium quisquam quis quo.</a>
