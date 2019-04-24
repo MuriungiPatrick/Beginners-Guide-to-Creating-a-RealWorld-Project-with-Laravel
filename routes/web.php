@@ -11,24 +11,10 @@
 |
 */
 // DEFINE THE HOMEPAGE
-Route::get('/', function () {
-
-  $jobs = [
-    'Web designer required for a long term project',
-    'Graphic designer required for a long term project',
-    'Web developer required for a long term project',
-  ];
-    return view('jobs.index', [
-      'jobs' => $jobs,
-    ]);
-});
+Route::get('/', 'JobController@index');
 
 // DEFINE THE JOBS DETAILS
-Route::get('/jobs/show', function () {
-    return view('jobs.show');
-});
+Route::get('/jobs/show', 'JobController@show');
 
 // DEFINE THE CATEGORY PAGE
-Route::get('/jobs/category', function () {
-    return view('jobs.category');
-});
+Route::get('/jobs/category', 'JobController@category');
