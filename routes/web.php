@@ -12,7 +12,15 @@
 */
 // DEFINE THE HOMEPAGE
 Route::get('/', function () {
-    return view('jobs.index');
+
+  $jobs = [
+    'Web designer required for a long term project',
+    'Graphic designer required for a long term project',
+    'Web developer required for a long term project',
+  ];
+    return view('jobs.index', [
+      'jobs' => $jobs,
+    ]);
 });
 
 // DEFINE THE JOBS DETAILS

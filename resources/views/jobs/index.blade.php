@@ -28,7 +28,7 @@
           </header>
 
           <div class="row jobs-details">
-
+@foreach($jobs as $job)
             <!-- START JOB DETAILS -->
               <div class="col-xs-12">
               <div class="jobs-block">
@@ -36,7 +36,7 @@
                   <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/Team-5-specs.png') }}" alt=""></a>
                   <div class="hgroup">
                     <h4>
-            <a href="{{ url('jobs/show')}}">Qui harum culpa accusantium quisquam quis quo.</a>
+            <a href="{{ url('jobs/show')}}">{{ $job }}</a>
                     </h4>
                      <div class="spacer-front"></div>
                   </div>
@@ -55,7 +55,7 @@
                 </footer>
               </div>
             </div>
-
+@endforeach
                          <!-- END JOB DETAILS -->
 
           </div>
