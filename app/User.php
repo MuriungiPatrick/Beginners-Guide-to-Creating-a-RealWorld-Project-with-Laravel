@@ -18,7 +18,11 @@ class User extends Authenticatable
     protected $fillable = [
         'name', 'email', 'password',
     ];
-
+// USER CLASS
+public function jobs()
+{
+  return $this>belongsTo(Job::class, 'freelance_id');
+}
     /**
      * The attributes that should be hidden for arrays.
      *
