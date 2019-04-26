@@ -47,7 +47,7 @@
                 </header>
 
                 <footer>
-                  <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>{{ $job->created_at }}&nbsp; By:&nbsp;<a href="author-jobs-details.html">{{ $job->freelance->name}}</a></div>
+                  <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>{{ $job->created_at->diffForHumans() }}&nbsp; By:&nbsp;<a href="author-jobs-details.html">{{ $job->freelance->name}}</a></div>
 
                   <div class="action-btn">
                     <a class="btn btn-xs btn-info" href="category-details.html">{{ $job->category->title }}</a>
