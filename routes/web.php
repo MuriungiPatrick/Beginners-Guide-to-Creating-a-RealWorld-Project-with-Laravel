@@ -14,7 +14,7 @@
 Route::get('/', 'JobController@index');
 
 // DEFINE THE JOBS DETAILS
-Route::get('/jobs/show', 'JobController@show');
+Route::get('/jobs/{job}', 'JobController@show')->name('jobs.show');
 
 // DEFINE THE CATEGORY PAGE
-Route::get('/jobs/category', 'JobController@category');
+Route::get('/category/{category}', 'JobController@category')->name('category');

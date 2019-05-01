@@ -6,26 +6,12 @@
     </header>
 
    <div class="category-grid">
-<a href="category-details.html">
-        <h4>Backend</h4>
+     @foreach($categories as $category)
+<a href="{{route('category', $category->slug)}}">
+        <h4>{{ $category->title }}</h4>
       </a>
-<a href="category-details.html">
-        <h4>Content writing</h4
-      </a>
+@endforeach
 
-<a href="category-details.html">
-        <h4>Frontend</h4>
-      </a>
-<a href="category-details.html">
-        <h4>Graphic Design</h4
-      </a>
-<a href="category-details.html">
-        <h4>Web Design</h4>
-
-      </a>
-<a href="category-details.html">
-        <h4>Web Development</h4>
-      </a>
 
     </div>
 
