@@ -36,7 +36,7 @@
                   <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/Team-5-specs.png') }}" alt=""></a>
                   <div class="hgroup">
                     <h4>
-            <a href="{{ url('jobs/show')}}">{{ $job->job_title }}</a>
+            <a href="{{ route('jobs.show', $job->slug)}}">{{ $job->job_title }}</a>
                     </h4>
                      <div class="spacer-front"></div>
                   </div>
@@ -61,17 +61,7 @@
           </div>
 
           <br><br>
-          <p class="text-center"><ul class="pagination" role="navigation">
-                    <li class="page-item disabled" aria-disabled="true" aria-label="&amp;laquo; Previous">
-                <span class="page-link" aria-hidden="true">&lsaquo;</span>
-            </li>
-    <li class="page-item active" aria-current="page"><span class="page-link">1</span></li>
-         <li class="page-item"><a class="page-link" href="#">2</a></li>
-       <li class="page-item"><a class="page-link" href="#">3</a>
-       </li><li class="page-item">
-                <a class="page-link" href="index.html" rel="next" aria-label="Next &amp;raquo;">&rsaquo;</a>
-            </li>
-            </ul>
+          <p class="text-center">{{ $jobs->links()}}
 </p>
         </div>
       </section>
