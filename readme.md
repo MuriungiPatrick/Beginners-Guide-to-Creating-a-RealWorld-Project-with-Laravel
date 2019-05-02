@@ -21,7 +21,7 @@ In this course we are breaking down all of the basics of Laravel to get you star
 - How to Create Controllers and How they Work.
 - Authentication
 
-UDEMY COURSE LINK
-````https://www.udemy.com/beginners-guide-to-creating-a-real-world-project-in-laravel  ````
+### UDEMY COURSE LINK
+https://www.udemy.com/beginners-guide-to-creating-a-real-world-project-in-laravel  
 
 The Laravel framework is open-source software licensed under the [MIT license]````(https://opensource.org/licenses/MIT).````
