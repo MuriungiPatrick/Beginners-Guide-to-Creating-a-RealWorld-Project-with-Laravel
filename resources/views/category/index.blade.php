@@ -6,7 +6,9 @@
 <!-- Site header -->
     <header class="site-header size-lg text-center" style="background-color: #000;">
       <div class="container">
-        <h1>Category: Graphic Design</h1>
+        @if(isset($categoryHeading))
+        <h1>Category: {{ $categoryHeading}}</h1
+          @endif
       </div>
     </header>
     <!-- END Site header -->
@@ -17,84 +19,34 @@
         <div class="container">
           <div class="row jobs-details">
             <!-- Job item -->
-                        <div class="col-xs-12">
-              <div class="jobs-block">
-                <header>
-                  <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                  <div class="hgroup">
-                    <h4>
-            <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                    </h4>
-                     <div class="spacer-front"></div>
-                  </div>
-                  <div class="jobs-meta">
-                    <span class="label label-success">Full Time</span>
-                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                  </div>
-                </header>
+            @foreach($jobs as $job)
+                        <!-- START JOB DETAILS -->
+                          <div class="col-xs-12">
+                          <div class="jobs-block">
+                            <header>
+                              <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/Team-5-specs.png') }}" alt=""></a>
+                              <div class="hgroup">
+                                <h4>
+                        <a href="{{ route('jobs.show', $job->slug)}}">{{ $job->job_title }}</a>
+                                </h4>
+                                 <div class="spacer-front"></div>
+                              </div>
+                              <div class="jobs-meta">
+                                <span class="label label-success">{{ $job->job_types }}</span>
+                                <span class="label label-warning"><i class="fa fa-dollar"></i> {{ $job->hourly_rate }}</span>
+                              </div>
+                            </header>
 
-                <footer>
-                  <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
+                            <footer>
+                              <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>{{ $job->created_at->diffForHumans() }}&nbsp; By:&nbsp;<a href="author-jobs-details.html">{{ $job->freelance->name}}</a></div>
 
-                  <div class="action-btn">
-                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                  </div>
-                </footer>
-              </div>
-            </div>
-                        <div class="col-xs-12">
-              <div class="jobs-block">
-                <header>
-                  <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                  <div class="hgroup">
-                    <h4>
-            <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                    </h4>
-                     <div class="spacer-front"></div>
-                  </div>
-                  <div class="jobs-meta">
-                    <span class="label label-success">Full Time</span>
-                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                  </div>
-                </header>
-
-                <footer>
-                  <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
-
-                  <div class="action-btn">
-                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                  </div>
-                </footer>
-              </div>
-            </div>
-
-
-
-                        <div class="col-xs-12">
-              <div class="jobs-block">
-                <header>
-                  <a href="author-jobs-details.html"><img class="resume-avatar" src="assets/img/avatar-1.jpg" alt=""></a>
-                  <div class="hgroup">
-                    <h4>
-            <a href="jobs-details.html">Qui harum culpa accusantium quisquam quis quo.</a>
-                    </h4>
-                     <div class="spacer-front"></div>
-                  </div>
-                  <div class="jobs-meta">
-                    <span class="label label-success">Full Time</span>
-                    <span class="label label-warning"><i class="fa fa-dollar"></i> 924</span>
-                  </div>
-                </header>
-
-                <footer>
-                  <div class="status"><strong>Posted: &nbsp;<i class="fa fa-clock-o"></i></strong>2 weeks ago &nbsp; By:&nbsp;<a href="author-jobs-details.html">James Mwirigi</a></div>
-
-                  <div class="action-btn">
-                    <a class="btn btn-xs btn-info" href="category-details.html">Backend</a>
-                  </div>
-                </footer>
-              </div>
-            </div>
+                              <div class="action-btn">
+                                <a class="btn btn-xs btn-info" href="category-details.html">{{ $job->category->title }}</a>
+                              </div>
+                            </footer>
+                          </div>
+                        </div>
+            @endforeach
                         <!-- END Job item -->
 
 

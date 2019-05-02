@@ -1,6 +1,4 @@
-
 ## About this course
-
 
 Hello and welcome to this course.
 
@@ -24,6 +22,6 @@ In this course we are breaking down all of the basics of Laravel to get you star
 - Authentication
 
 UDEMY COURSE LINK
-https://www.udemy.com/beginners-guide-to-creating-a-real-world-project-in-laravel/
+````https://www.udemy.com/beginners-guide-to-creating-a-real-world-project-in-laravel  ````
 
-The Laravel framework is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+The Laravel framework is open-source software licensed under the [MIT license]````(https://opensource.org/licenses/MIT).````

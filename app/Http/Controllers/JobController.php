@@ -24,8 +24,9 @@ class JobController extends Controller
   // DEFINE CATEGORY PAGE
   public function category(category $category)
   {
+    $categoryHeading = $category->title;
     $categories = Category::with('jobs')->orderby('title', 'asc')->get();
     $jobs = Job::with('category')->LatestFirst()->Published()->where('category_id', $category->id)->Simplepaginate(5);
-      return view('category.index', compact('jobs', 'categories'));
+      return view('category.index', compact('jobs', 'categories', 'categoryHeading'));
   }
 }
