@@ -11,6 +11,8 @@ class Category extends Model
     {
       return $this->hasMany(Job::class);
     }
+
+    // DEFINE SLUG
     public function getRouteKeyName()
     {
       return 'slug';

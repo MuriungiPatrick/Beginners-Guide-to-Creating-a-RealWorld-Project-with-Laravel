@@ -18,3 +18,7 @@ Route::get('/jobs/{job}', 'JobController@show')->name('jobs.show');
 
 // DEFINE THE CATEGORY PAGE
 Route::get('/category/{category}', 'JobController@category')->name('category');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
