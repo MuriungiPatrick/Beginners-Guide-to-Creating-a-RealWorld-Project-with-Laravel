@@ -22,3 +22,6 @@ Route::get('/category/{category}', 'JobController@category')->name('category');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+// DEFINE PROFILE PAGE
+Route::get('/profile', 'ProfileController@profile')->name('profile');

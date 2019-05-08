@@ -4,7 +4,6 @@
 @section('description', 'Hello from the Homepage')
 @section('content')
 
-
 <!-- Site header -->
     <header class="site-header size-lg text-center" style="background-color: #000;">
       <div class="container">
@@ -33,7 +32,7 @@
               <div class="col-xs-12">
               <div class="jobs-block">
                 <header>
-                  <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/Team-5-specs.png') }}" alt=""></a>
+                  <a href="author-jobs-details.html"><img class="resume-avatar" src="{{ asset('assets/img/default.jpg') }}" alt=""></a>
                   <div class="hgroup">
                     <h4>
             <a href="{{ route('jobs.show', $job->slug)}}">{{ $job->job_title }}</a>

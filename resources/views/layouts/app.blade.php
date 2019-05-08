@@ -55,6 +55,11 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+<!-- PROFILE PAGE LINK START HERE -->
+<a class="dropdown-item" href="{{ route('profile') }}">
+    {{ __('Profile Page') }}
+</a>
+<!-- LOGOUT START HERE -->
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
