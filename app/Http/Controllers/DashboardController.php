@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Job;
+use App\User;
+use Auth;
 
 class DashboardController extends Controller
 {
@@ -13,8 +16,9 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        //
-        return view('dashboard.index');
+        //DISPLAY ALL JOB POST  THAT BELONGS TO AUTHENTICATED USER
+        $jobs = Job::where('freelance_id', Auth::user()->id)->get();
+        return view('dashboard.index', compact('jobs'));
     }
 
     /**
@@ -60,7 +64,8 @@ class DashboardController extends Controller
      */
     public function edit($id)
     {
-        //
+        //DISPLAY THE EDIT FORM
+        return view('dashboard.edit');
     }
 
     /**
