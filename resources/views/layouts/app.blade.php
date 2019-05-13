@@ -56,8 +56,17 @@
 
                                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
 <!-- PROFILE PAGE LINK START HERE -->
-<a class="dropdown-item" href="{{ route('profile') }}">
+<a class="dropdown-item" href="{{ route('dashboard.profile') }}">
     {{ __('Profile Page') }}
+</a>
+<!-- CREATE A JOB POST LINK START HERE-->
+<a class="dropdown-item" href="{{ route('dashboard.create') }}">
+    {{ __('Post a Job') }}
+</a>
+
+<!-- EDIT A JOB POST LINK START HERE-->
+<a class="dropdown-item" href="{{ url('dashboard/show') }}">
+    {{ __('Edit a Job') }}
 </a>
 <!-- LOGOUT START HERE -->
                                     <a class="dropdown-item" href="{{ route('logout') }}"

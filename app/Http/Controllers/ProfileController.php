@@ -9,6 +9,6 @@ class ProfileController extends Controller
     // PROFILE PAGE START HERE
     public function profile()
     {
-      return view('profile');
+      return view('dashboard.profile');
     }
 }

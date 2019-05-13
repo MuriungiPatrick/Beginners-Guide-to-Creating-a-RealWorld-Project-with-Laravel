@@ -14,6 +14,7 @@ class DashboardController extends Controller
     public function index()
     {
         //
+        return view('dashboard.index');
     }
 
     /**
@@ -24,6 +25,7 @@ class DashboardController extends Controller
     public function create()
     {
         //
+        return view('dashboard.create');
     }
 
     /**
@@ -45,7 +47,9 @@ class DashboardController extends Controller
      */
     public function show($id)
     {
-        //
+        // create the show view
+        return view('dashboard.show');
+
     }
 
     /**
