@@ -54,7 +54,16 @@ class RegisterController extends Controller
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
     }
-
+// // HOW TO DISABLE & VIEW
+// public function register()
+// {
+//   return redirect('/login');
+// }
+// // DISABLE THE REGISTRION FORM
+// public function showRegistrationForm()
+// {
+//   return redirect('/login');
+// }
     /**
      * Create a new user instance after a valid registration.
      *

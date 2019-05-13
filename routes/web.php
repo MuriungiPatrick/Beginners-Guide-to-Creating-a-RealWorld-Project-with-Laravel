@@ -29,3 +29,8 @@ Route::get('/dashboard/profile', 'ProfileController@profile')->name('dashboard.p
 
 // DEFINE THE RESOURCE VIEWS
 Route::resource('dashboard', 'DashboardController');
+
+// // DISABLE REGISTRATION VIEW AND FORM
+// Route::get('/register', function() {
+//   return redirect('/login');
+// });
