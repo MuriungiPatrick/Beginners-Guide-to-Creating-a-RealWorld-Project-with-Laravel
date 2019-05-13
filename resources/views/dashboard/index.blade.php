@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('DashboardTitle', 'Index Page')
 
 @section('content')
 <div class="container">

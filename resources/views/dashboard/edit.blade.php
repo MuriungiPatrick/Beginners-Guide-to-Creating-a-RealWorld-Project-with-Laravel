@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@section('DashboardTitle', 'Edit Page')
 
 @section('content')
 <div class="container">
