@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('pagetitle', 'Jobs Details Page')
+@section('pagetitle', 'Jobs Details Page' .  $job->job_title)
 @section('description', 'Hello from the Details Page')
 @section('content')
 
@@ -15,7 +15,7 @@
               <h2>{{$job->job_title}}</h2>
               <ul>
             <li>Posted By: &nbsp;<a class="text-white" href="author-jobs-details.html">
-              <i class="fa fa-user"></i> {{ $job->freelance->name}}</a></li>
+              <i class="fa fa-user"></i> </a></li>
               </ul>
             </div>
           </div>
